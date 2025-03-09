@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Leduca_tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Leduca_tech</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#courses">Courses</a></li>
+                <li><a href="donate.html" class="donate-btn active">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="donate-section">
+            <h1>Support Our Mission</h1>
+            <p>Your donation helps us create more educational content and reach more students worldwide.</p>
+            
+            <div class="donation-container">
+                <div class="donation-options">
+                    <h2>Choose Amount</h2>
+                    <div class="amount-buttons">
+                        <button class="amount-btn" data-amount="10">$10</button>
+                        <button class="amount-btn" data-amount="25">$25</button>
+                        <button class="amount-btn" data-amount="50">$50</button>
+                        <button class="amount-btn" data-amount="100">$100</button>
+                        <button class="amount-btn custom">Custom</button>
+                    </div>
+                    
+                    <form id="donation-form" class="donation-form">
+                        <div class="form-group">
+                            <label for="custom-amount">Custom Amount ($)</label>
+                            <input type="number" id="custom-amount" min="1" placeholder="Enter amount">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="payment-methods">
+                            <h3>Payment Method</h3>
+                            <div class="payment-options">
+                                <button type="button" class="payment-btn">
+                                    <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal">
+                                    PayPal
+                                </button>
+                                <button type="button" class="payment-btn">
+                                    <img src="https://www.mastercard.us/content/dam/public/mastercardcom/na/us/en/homepage/Home/mc-logo-52.svg" alt="Credit Card">
+                                    Credit Card
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Donate Now</button>
+                    </form>
+                </div>
+                
+                <div class="donation-info">
+                    <h3>Why Donate?</h3>
+                    <ul>
+                        <li>Support creation of new courses</li>
+                        <li>Help maintain learning platforms</li>
+                        <li>Enable student scholarships</li>
+                        <li>Contribute to community growth</li>
+                    </ul>
+                    <p class="tax-note">* All donations are tax-deductible</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Leduca_tech. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

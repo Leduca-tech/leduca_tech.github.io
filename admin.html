@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management - Leduca_tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Leduca_tech</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#courses">Courses</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate</a></li>
+                <li><a href="#" id="logout-btn" class="admin-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-section">
+            <h1>Course Content Management</h1>
+            
+            <div class="course-upload-container">
+                <!-- ABV Course Section -->
+                <div class="course-upload-card">
+                    <h2>Assertion-Based Verification (ABV)</h2>
+                    <div class="upload-section">
+                        <h3>Upload Course Materials</h3>
+                        <form class="upload-form" data-course="abv">
+                            <div class="form-group">
+                                <label for="abv-title">Content Title</label>
+                                <input type="text" id="abv-title" required placeholder="Enter content title">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="abv-description">Description</label>
+                                <textarea id="abv-description" rows="3" placeholder="Enter content description"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="abv-file">Upload File</label>
+                                <input type="file" id="abv-file" required>
+                                <p class="file-info">Supported formats: PDF, PPT, PPTX, DOC, DOCX, ZIP (max 100MB)</p>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Upload Content</button>
+                        </form>
+                        
+                        <div class="uploaded-files">
+                            <h3>Uploaded Files</h3>
+                            <ul id="abv-files-list" class="files-list">
+                                <!-- Files will be populated via JavaScript -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UVM Course Section -->
+                <div class="course-upload-card">
+                    <h2>Universal Verification Methodology (UVM)</h2>
+                    <div class="upload-section">
+                        <h3>Upload Course Materials</h3>
+                        <form class="upload-form" data-course="uvm">
+                            <div class="form-group">
+                                <label for="uvm-title">Content Title</label>
+                                <input type="text" id="uvm-title" required placeholder="Enter content title">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="uvm-description">Description</label>
+                                <textarea id="uvm-description" rows="3" placeholder="Enter content description"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="uvm-file">Upload File</label>
+                                <input type="file" id="uvm-file" required>
+                                <p class="file-info">Supported formats: PDF, PPT, PPTX, DOC, DOCX, ZIP (max 100MB)</p>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Upload Content</button>
+                        </form>
+                        
+                        <div class="uploaded-files">
+                            <h3>Uploaded Files</h3>
+                            <ul id="uvm-files-list" class="files-list">
+                                <!-- Files will be populated via JavaScript -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Leduca_tech. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
